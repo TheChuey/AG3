@@ -1,0 +1,18 @@
+# Python environment
+.venv/
+env/
+venv/
+ENV/
+
+# Byte-compiled / optimized / __pycache__
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local config & sensitive info
+.env
+*.log
+
+# OS specific
+.DS_Store
+Thumbs.db
