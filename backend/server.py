@@ -7,9 +7,11 @@ from pydantic import BaseModel
 from pathlib import Path
 from agent import run_agent
 from llm_interface import get_available_models
+from pathlib import Path
 
-UI_SOURCE_PATH = r"C:\Users\43319\OneDrive\AI AGENTS\AI Research AGENT PROTOTYPE\AG3\frontend"
-FRONTEND_DIR = Path(UI_SOURCE_PATH)
+# This finds the folder where server.py lives, goes up one level, then into frontend
+BASE_DIR = Path(__file__).parent.parent
+FRONTEND_DIR = BASE_DIR / "frontend"
 INDEX_FILE = FRONTEND_DIR / "index.html"
 
 app = FastAPI()
